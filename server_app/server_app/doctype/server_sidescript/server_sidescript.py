@@ -126,4 +126,8 @@ class Server_SideScript(Document):
 	# 	self.last_name = 'Shinde'
 	# 	frappe.msgprint(msg)
 
-    pass
+    
+
+	def before_save(self):
+		doc = frappe.get_doc('CarDetails','Car0010')
+		doc.as_dict()
