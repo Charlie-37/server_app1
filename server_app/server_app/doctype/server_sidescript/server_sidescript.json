@@ -8,19 +8,22 @@
  "engine": "InnoDB",
  "field_order": [
   "fname",
+  "enable",
   "last_name",
   "file",
   "profile_pic",
   "attach_image",
   "family_members",
-  "amended_from",
-  "car_details"
+  "car_details",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "fname",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "First Name",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -45,15 +48,6 @@
    "label": "Attach Image"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Server_SideScript",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
    "fieldname": "car_details",
    "fieldtype": "Link",
    "label": "Car Details",
@@ -64,13 +58,27 @@
    "fieldtype": "Table",
    "label": "Family Mmbers",
    "options": "FamilyMember"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Server_SideScript",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "image_field": "attach_image",
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-11-01 14:46:02.212515",
+ "modified": "2022-11-09 12:39:21.931294",
  "modified_by": "Administrator",
  "module": "Server App",
  "name": "Server_SideScript",

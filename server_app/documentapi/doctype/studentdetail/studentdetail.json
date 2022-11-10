@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "STD.####",
+ "creation": "2022-11-10 13:13:32.997702",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rnum",
+  "enable",
+  "section_break_3",
+  "first_name",
+  "last_name",
+  "sphotos",
+  "contact",
+  "date_of_birth",
+  "sclass",
+  "route",
+  "student_subject",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "rnum",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Roll Number"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "sphotos",
+   "fieldtype": "Attach Image",
+   "label": "Student Photo"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "sclass",
+   "fieldtype": "Int",
+   "label": "Class",
+   "reqd": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "student_subject",
+   "fieldtype": "Table",
+   "label": "Subjects",
+   "options": "Subject"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "StudentDetail",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-11-10 14:31:56.865740",
+ "modified_by": "Administrator",
+ "module": "DocumentApi",
+ "name": "StudentDetail",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "route",
+ "search_fields": "first_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "first_name"
+}

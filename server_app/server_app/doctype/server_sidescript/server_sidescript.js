@@ -22,6 +22,14 @@ frappe.ui.form.on('Server_SideScript', {
 // 		});
 // 	}
 
+enable: function(frm){
+	let row = frm.add_child('family_members',{
+		mname : 'Jay',
+		relation : 'Brother'
+	});
+
+    frm.refresh_field('family_members')
+}
 
 
  });

@@ -31,10 +31,11 @@ class Server_SideScript(Document):
 
 	def validate(self):
 		# self.new_document()
-		self.add_document()
+		# self.add_document()
 		# self.set_value()
 		# self.get_list()
 		# self.get_value()
+
 		# doc = frappe.new_doc('emp')
 		# doc.append('family_members',{
 		# 	'relation' : 'Brother',
@@ -62,21 +63,17 @@ class Server_SideScript(Document):
 
 
 
-
-
-
 			
 
 
 
-	def add_document(self):
-		doc = frappe.new_doc('CarDetails')
-		doc.brand = 'Audi'
-		doc.model = 'R8'
-		doc.model_year = '2022'
-		doc.color = 'Black'
-		doc.insert()
-
+	# def add_document(self):
+	# 	doc = frappe.new_doc('CarDetails')
+	# 	doc.brand = 'BMW'
+	# 	doc.model = 'AMG'
+	# 	doc.model_year = '2022'
+	# 	doc.color = 'Black'
+	# 	doc.insert()
 
 	# //*--------Set/Update Value to a document and Database
 
@@ -145,6 +142,5 @@ class Server_SideScript(Document):
 	# 	frappe.msgprint(msg)
 
     
-
 pass
 	

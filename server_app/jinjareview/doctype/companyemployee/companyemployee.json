@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "jInja.####",
+ "creation": "2022-11-07 12:11:12.349262",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fname",
+  "last_name",
+  "pimage",
+  "email",
+  "date_of_birth",
+  "contact",
+  "about_yourself",
+  "designation",
+  "experience",
+  "route",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "fname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "about_yourself",
+   "fieldtype": "Small Text",
+   "label": "About Yourself"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Select",
+   "label": "Designation",
+   "options": "Python\nAngular"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Duration",
+   "label": "Experience"
+  },
+  {
+   "fieldname": "pimage",
+   "fieldtype": "Attach Image",
+   "label": "Profile Pic"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "CompanyEmployee",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  }
+ ],
+ "has_web_view": 1,
+ "image_field": "pimage",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-11-07 12:17:08.018770",
+ "modified_by": "Administrator",
+ "module": "JinjaReview",
+ "name": "CompanyEmployee",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "route",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "fname"
+}

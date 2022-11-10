@@ -10,7 +10,13 @@
   "brand",
   "model",
   "model_year",
-  "color"
+  "color",
+  "date",
+  "datetime",
+  "int",
+  "check",
+  "select",
+  "currncy"
  ],
  "fields": [
   {
@@ -33,11 +39,43 @@
    "fieldname": "color",
    "fieldtype": "Data",
    "label": "Color"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "date"
+  },
+  {
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "label": "datetime"
+  },
+  {
+   "fieldname": "int",
+   "fieldtype": "Int",
+   "label": "int"
+  },
+  {
+   "default": "0",
+   "fieldname": "check",
+   "fieldtype": "Check",
+   "label": "check"
+  },
+  {
+   "fieldname": "select",
+   "fieldtype": "Select",
+   "label": "select",
+   "options": "Hey\nHello"
+  },
+  {
+   "fieldname": "currncy",
+   "fieldtype": "Currency",
+   "label": "currncy"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-11-01 13:41:16.430211",
+ "modified": "2022-11-03 11:15:38.349408",
  "modified_by": "Administrator",
  "module": "Server App",
  "name": "CarDetails",
