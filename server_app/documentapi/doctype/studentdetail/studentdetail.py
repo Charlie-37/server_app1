@@ -82,7 +82,7 @@ class StudentDetail(WebsiteGenerator):
 	# //*---------------------**-----------------------//
 
 
-	# 	# 7. Doc.append()
+	# 	# 7. Doc.append()  #Not Working
 
 	# 	# doc = frappe.get_doc('StudentDetail','Prasad')
 	# 	# doc.append('student_subject',{
@@ -294,7 +294,7 @@ class StudentDetail(WebsiteGenerator):
 
 		# //*---------------------**-----------------------//
 
-		
+
 
 
 		pass
