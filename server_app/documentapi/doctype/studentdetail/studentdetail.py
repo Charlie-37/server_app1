@@ -62,6 +62,16 @@ class StudentDetail(WebsiteGenerator):
 
 # //*---------------------**-----------------------//
 
+	## 6. Frappe.get_meta()
+
+		# # meta = frappe.get_meta('StudentDetail')
+		# # x = meta.has_field('contact')
+		# # y = meta.get_custom_fields() #Not working
+		# # print(f'yolo ; {y}')
+
+
+# //*---------------------**-----------------------//
+
 
 	# 	# # 6. Doc.db.set
 
@@ -78,6 +88,80 @@ class StudentDetail(WebsiteGenerator):
 	# 	# doc.append('student_subject',{
 	# 	# 	"subject_1" : 'Arts'
 	# 	# })
+
+
+	# //*---------------------**-----------------------//
+
+
+	# 8. doc.get_doc_before_save
+
+		# doc = frappe.get_doc('StudentDetail','Prasad', as_dict=1)
+
+		# # frappe.msgprint(f'here {doc.sclass}')
+
+		# old_doc = doc.get_doc_before_save()  #Not working
+
+		# if old_doc.sclass != doc.sclass:
+		# 	frappe.msgprint('Doc changed')
+
+		# else:
+		# 	frappe.msgprint('not changed')
+
+
+	# //*---------------------**-----------------------//
+
+
+	# # 9.doc.check_permision()
+
+	# 	doc = frappe.get_doc('StudentDetail','Prasad', as_dict=1)
+	# 	x = doc.check_permission(permtype='read')
+
+	# 	frappe.msgprint(f'permission is {x}')
+
+
+	# //*---------------------**-----------------------//
+
+
+	# #10 doc.get_title()
+
+	# 	frappe.msgprint(f'Title is {doc.get_title()}')
+
+	# # 11 doc.get_url()
+
+	# 	frappe.msgprint(f'Url is : {doc.get_url()}')
+
+
+	# //*---------------------**-----------------------//
+
+	# # 12 doc.add_comment()
+
+	# 	doc.add_comment('Comment',text='sample Comment')
+	# 	doc.add_comment('Edit',text='Value Changed in form')
+
+	# //*---------------------**-----------------------//
+
+	# # 13 doc.add_tags()
+
+	# 	doc.add_tag('Python Developer')
+	# 	doc.add_tag('Angular Developer')
+	# 	doc.add_tag('Student')
+
+	# # 14 doc.get_tags()
+
+	# 	frappe.msgprint(f'tags are : {doc.get_tags()}')
+
+	# //*---------------------**-----------------------//
+
+
+	# #15 doc.run_method()
+
+	# 	doc.run_method('loops')
+
+	# 	def loops():
+	# 		for i in range(5):
+	# 			frappe.msgprint('Run Method')
+
+
 
 
 # //*-------------------------------------**-----------------------------------------//
@@ -166,6 +250,52 @@ class StudentDetail(WebsiteGenerator):
 
 
 		# //*---------------------**-----------------------//
+
+		# 8. Frappe.db.delete()
+
+		# if frappe.db.exists('StudentDetail','Maht'):
+
+		# 	frappe.db.delete('StudentDetail',filters={'last_name':'Maht'})
+		# 	frappe.db.commit()
+
+		# //*---------------------**-----------------------//
+
+
+		# 9. Frappe.db.describe()
+
+		# frappe.db.describe('StudentDetail')
+
+
+		# # Out[27]: 
+		# # (('name', 'varchar(140)', 'NO', 'PRI', None, ''),
+		# # ('creation', 'datetime(6)', 'YES', '', None, ''),
+		# # ('modified', 'datetime(6)', 'YES', 'MUL', None, ''),
+		# # ('modified_by', 'varchar(140)', 'YES', '', None, ''),
+		# # ('owner', 'varchar(140)', 'YES', '', None, ''),
+		# # ('docstatus', 'int(1)', 'NO', '', '0', ''),
+		# # ('parent', 'varchar(140)', 'YES', 'MUL', None, ''),
+		# # ('parentfield', 'varchar(140)', 'YES', '', None, ''),
+		# # ('parenttype', 'varchar(140)', 'YES', '', None, ''),
+		# # ('idx', 'int(8)', 'NO', '', '0', ''),
+		# # ('rnum', 'varchar(140)', 'YES', '', None, ''),
+		# # ('enable', 'int(1)', 'NO', '', '0', ''),
+		# # ('first_name', 'varchar(140)', 'YES', '', None, ''),
+		# # ('last_name', 'varchar(140)', 'YES', '', None, ''),
+		# # ('sphotos', 'text', 'YES', '', None, ''),
+		# # ('contact', 'varchar(140)', 'YES', '', None, ''),
+		# # ('date_of_birth', 'date', 'YES', '', None, ''),
+		# # ('sclass', 'int(11)', 'NO', '', '0', ''),
+		# # ('route', 'varchar(140)', 'YES', '', None, ''),
+		# # ('amended_from', 'varchar(140)', 'YES', '', None, ''),
+		# # ('_user_tags', 'text', 'YES', '', None, ''),
+		# # ('_comments', 'text', 'YES', '', None, ''),
+		# # ('_assign', 'text', 'YES', '', None, ''),
+		# # ('_liked_by', 'text', 'YES', '', None, ''))
+
+		# //*---------------------**-----------------------//
+
+		
+
 
 		pass
 		
