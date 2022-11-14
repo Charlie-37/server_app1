@@ -293,6 +293,10 @@ class StudentDetail(WebsiteGenerator):
 		# # ('_liked_by', 'text', 'YES', '', None, ''))
 
 		# //*---------------------**-----------------------//
+		def validate(self):
+			docstat = self.docstatus
+			frappe.msgprint(f'hello {docstat}')
+
 
 
 

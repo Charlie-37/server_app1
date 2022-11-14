@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "creation": "2022-11-14 11:27:43.837145",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "amended_from",
+  "pict",
+  "image_4"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "first name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ValCheck",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "pict",
+   "fieldtype": "Attach Image",
+   "label": "Add image"
+  },
+  {
+   "fieldname": "image_4",
+   "fieldtype": "Image",
+   "options": "pict"
+  }
+ ],
+ "image_field": "pict",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-14 17:06:52.867523",
+ "modified_by": "Administrator",
+ "module": "Server App",
+ "name": "ValCheck",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "first_name",
+ "track_changes": 1
+}

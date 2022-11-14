@@ -95,21 +95,27 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	# "*": {
+	# 	"on_update": "method",
+	# 	"on_cancel": "method",
+	# 	"on_trash": "method"
+	# }
+
+	"ValCheck" : {
+		"validate" : "server_app.server_app.hooksprac.print.showmsg",
+		"after_delete" : "server_app.server_app.hooksprac.print.delete_sucess",
+
+	}
+}
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-#	"all": [
-#		"server_app.tasks.all"
-#	],
+scheduler_events = {
+	"all": [
+		"server_app.server_app.hooksprac.print.delete_sucess"
+	],
 #	"daily": [
 #		"server_app.tasks.daily"
 #	],
@@ -122,7 +128,14 @@ app_license = "MIT"
 #	"monthly": [
 #		"server_app.tasks.monthly"
 #	]
-# }
+
+	'cron' : {
+		'* * * * *' : ["server_app.server_app.hooksprac.print.delete_sucess"]
+	}
+}
+
+
+fixtures= ['ValCheck', 'CandidateForm']
 
 # Testing
 # -------
